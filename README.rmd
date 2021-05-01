@@ -6,3 +6,5 @@
 * 第二个model用VIF筛出来的reduced model。
 * 第三个model用automatic selection来build。
 * 这个可以多做几个model，foward，backward，AIC，BIC。
+* 几个model之间用prediction accuracy比较最好的model。
+* 对每一个outcome y重复这个过程。这个过程可以做成一个大的function。
