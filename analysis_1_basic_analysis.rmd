@@ -1,5 +1,7 @@
 ```{r visualizations}
-y <- df$GABA_NMU_NTY
+y <- df$PAIN_ACUTE
+y = as.factor(y)
 summary(y)
-hist(y, breaks = 50)
+plot(y, xlab = "PAIN_ACUTE", ylab = "Num",
+     main = "Summary of PAIN_ACUTE")
 ```
