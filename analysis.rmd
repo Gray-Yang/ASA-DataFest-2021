@@ -1,3 +1,30 @@
+---
+title: "Data Fest Report"
+author:
+    - 
+    - 
+    - 
+    - 
+output:
+    pdf_document:
+        keep_tex: FALSE
+        latex_engine: xelatex
+fontsize: 12pt
+mainfont: Times New Roman
+indent: true
+geometry: margin=1in
+header-includes:
+    - \usepackage{setspace}\singlespacing
+    - \usepackage{fancyhdr}
+    - \usepackage{lastpage}
+    - \pagestyle{fancy}
+    - \fancyhead{}
+    - \renewcommand{\headrule}{}
+    - \fancyfoot[C]{Page \textbf{\thepage} of \textbf{\pageref*{LastPage}}}
+    - \fancypagestyle{plain}{\pagestyle{fancy}}
+    - \renewcommand{\and}{\\}
+---
+
 ```{r options, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE,
                       results = "hold",
