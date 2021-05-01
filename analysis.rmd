@@ -37,3 +37,6 @@ df[is.na(df)] = 0
 print(dim(df))
 head(df[1:5])
 ```
+
+```{r child = 'analysis_1_basic_analysis.rmd'}
+```
