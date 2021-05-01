@@ -7,8 +7,9 @@ plot(y, xlab = "PAIN_ACUTE", ylab = "Num",
 ```
 
 ```{r sub-dataframe}
+df = df[!names(df) %in% c("DATE", "DEM_POSTAL", "START_DATE")]
+df = df[apply(df, 2, function(x) min(x) != max(x))]
 subdf = df[sample(nrow(df),1000),]
-subdf = subdf[!names(df) %in% c("DATE", "DEM_POSTAL", "START_DATE", "STATUS")]
 ```
 
 ```{r}
