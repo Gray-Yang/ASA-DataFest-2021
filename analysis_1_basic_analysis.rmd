@@ -32,5 +32,6 @@ stepwiseVIF = function(model, threshold=10)
 
 ```{r}
 full = lm(PAIN_ACUTE ~ ., data = subdf)
+full = lm(PAIN_ACUTE ~ ., data = subdf[names(full$coef)[!is.na(full$coef)][-1]])
 reduced = stepwiseVIF(full)
 ```
