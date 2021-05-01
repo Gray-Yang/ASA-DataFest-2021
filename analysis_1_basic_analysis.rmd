@@ -5,3 +5,32 @@ summary(y)
 plot(y, xlab = "PAIN_ACUTE", ylab = "Num",
      main = "Summary of PAIN_ACUTE")
 ```
+
+```{r sub-dataframe}
+subdf = df[sample(nrow(df),1000),]
+subdf = subdf[!names(df) %in% c("DATE", "DEM_POSTAL", "START_DATE", "STATUS")]
+```
+
+```{r}
+library(regclass)
+stepwiseVIF = function(model, threshold=10)
+{
+    max_VIF = max(VIF(model))
+    max_VIF_var = names(which(VIF(model) == max_VIF))
+    temp_model = model
+    while (max_VIF > threshold)
+    {
+        update_formula = paste0(".~.-", max_VIF_var)
+        temp_model = update(object = temp_model, formula = update_formula)
+        max_VIF = max(VIF(temp_model))
+        max_VIF_var = names(which(VIF(temp_model) == max_VIF))
+    }
+    final_model = temp_model
+    return(final_model)
+}
+```
+
+```{r}
+full = lm(PAIN_ACUTE ~ ., data = subdf)
+reduced = stepwiseVIF(full)
+```

@@ -1,0 +1,8 @@
+# Gan-DDL
+
+* outcome有很多个outcome，可以每一个outcome做一个model。
+* 对于每一个outcome y而言，做几个不同的model进行比较，选出一个最好的。
+* 第一个model选所有跟y cor大的covariate fit一个model。
+* 第二个model用VIF筛出来的reduced model。
+* 第三个model用automatic selection来build。
+* 这个可以多做几个model，foward，backward，AIC，BIC。
