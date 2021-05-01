@@ -5,10 +5,7 @@ author:
     - 
     - 
     - 
-output:
-    pdf_document:
-        keep_tex: FALSE
-        latex_engine: xelatex
+output: powerpoint_presentation
 fontsize: 12pt
 mainfont: Times New Roman
 indent: true
