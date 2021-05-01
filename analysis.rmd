@@ -32,6 +32,6 @@ knitr::opts_chunk$set(echo = FALSE,
 ```
 
 ```{r load data}
-df <- read.csv(file="ca.csv")
-df[is.na(df)] = 0
+# df <- read.csv(file="ca.csv")
+# df[is.na(df)] = 0
 ```
