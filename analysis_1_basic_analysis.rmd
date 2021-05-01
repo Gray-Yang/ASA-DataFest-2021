@@ -1,0 +1,4 @@
+```{r visualizations}
+y <- df$GABA_NMU_NTY
+hist(y, breaks = 50)
+```
