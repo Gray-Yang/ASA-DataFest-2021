@@ -1,4 +1,5 @@
 ```{r visualizations}
 y <- df$GABA_NMU_NTY
+summary(y)
 hist(y, breaks = 50)
 ```
