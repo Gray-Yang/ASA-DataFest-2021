@@ -1,0 +1,12 @@
+```{r options, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      results = "hold",
+                      message = FALSE,
+                      warning = FALSE,
+                      fig.width=3,
+                      fig.height=3)
+```
+
+```{r load data}
+df <- read.csv(file="ca.csv")
+```
