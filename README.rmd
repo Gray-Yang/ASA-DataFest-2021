@@ -1,10 +1,28 @@
-# Gan-DDL
+2021 Waterloo Data Fest
 
-* outcome有很多个outcome，可以每一个outcome做一个model。
-* 对于每一个outcome y而言，做几个不同的model进行比较，选出一个最好的。
-* 第一个model选所有跟y cor大的covariate fit一个model。
-* 第二个model用VIF筛出来的reduced model。
-* 第三个model用automatic selection来build。
-* 这个可以多做几个model，foward，backward，AIC，BIC。
-* 几个model之间用prediction accuracy比较最好的model。
-* 对每一个outcome y重复这个过程。这个过程可以做成一个大的function。
+1: Goal determination  
+Analysis of prescription drug abuse in Canada
+
+2. Data acquisition  
+Official data provided by 2021 Data FEST  
+
+3. Data cleaning  
+Exclude outliers, blank values, invalid values, and duplicate values  
+
+4. Data consolidation  
+Use Excel and python for basic data analysis  
+
+5. Describe the analysis  
+To determine the severity of substance abuse, we looked at the percentage of respondents who had used a substance and the rate of misuse of that substance by those individuals. We then used regression models to identify factors that might have a significant impact on substance abuse propensity.  
+
+6. Insight the conclusion  
+We found in our survey that codeine is the most misused of all prescription drugs. This abuse occurred mainly in the Quebec region, where 33.21 percent of residents without mental illness abused codeine. Students across Canada use marijuana, which is the most used illegal drug, significantly more than non-students. The high use of cannabis among Canadian students may require caution. Therefore, it is necessary to investigate the use of cannabis by students in order to understand the potential for drug abuse  
+
+7. Report writing  
+The report is divided into six parts  
+Reports the background  
+Reporting purposes  
+Data source, quantity and other basic information  
+The content of the paged chart and the conclusion of this page  
+Summary and final conclusion of each part  
+Next step strategy or forecast of trend  
