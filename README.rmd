@@ -11,6 +11,8 @@ Exclude outliers, blank values, invalid values, and duplicate values
 
 4. Data consolidation  
 Use Excel, R and jupyter notebook for basic data analysis  
+Latent Dirichlet allocation is not fit for these data 
+Then we try Sample regression population
 
 5. Describe the analysis  
 To determine the severity of substance abuse, we looked at the percentage of respondents who had used a substance and the rate of misuse of that substance by those individuals. We then used regression models to identify factors that might have a significant impact on substance abuse propensity.  
