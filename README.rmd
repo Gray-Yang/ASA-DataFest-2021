@@ -1,6 +1,6 @@
 2021 Waterloo Data Fest
 
-1: Goal determination  
+1. Goal determination  
 Analysis of prescription drug abuse in Canada
 
 2. Data acquisition  
